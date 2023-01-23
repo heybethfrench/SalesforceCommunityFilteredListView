@@ -1,16 +1,10 @@
-# Salesforce DX Project: Next Steps
+# Filtered List View for Salesforce Community/Experience
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This component uses custom metadata to store naming conventions for list view names.  Use a naming convention at the beginning of the list view name to identify lists to display to community/experience uses.  The use case that gave me this idea was different list views for different languages.
 
-## How Do You Plan to Deploy Your Changes?
+When adding the component to the comminity/experience site, you can pick from sObjects and list view filters.  The list view filter looks at a custom metadata record that identifies the naming convention, and then returns all the list views that start with that naming convention.  However, your community or experience users will not see the naming convention.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
+## Salesforce Documentation
 
 - [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)

@@ -2,14 +2,15 @@
     <aura:handler name="init" value="{!this}" action="{!c.init}" />
     
     <aura:attribute name="sObjectType" type="String" access="global"/>
-    <aura:attribute name="language" type="String" access="global"/>
+    <aura:attribute name="listviewfilter" type="String" access="global"/>
+   
     <aura:attribute name="selectedValue" type="String" access="global"/>
     <aura:attribute name="render" type="Boolean"/>
     
     <aura:handler name="componentEvent" event="c:selectedListViewEvent" action="{!c.handleComponentEvent}"/>
     
     <div class="slds-p-bottom_xx-small">
-        <c:FilteredListViewPicklist sObjectType="{!v.sObjectType}" language="{!v.language}"/>
+        <c:FilteredListViewPicklist sObjectType="{!v.sObjectType}" listviewfilter="{!v.listviewfilter}"/>
     </div>
                                 
     <aura:if isTrue="{!v.render}">

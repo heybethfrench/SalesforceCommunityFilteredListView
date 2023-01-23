@@ -1,6 +1,6 @@
 <aura:component access="global" controller="FilteredListViewAuraController" >
 	<aura:attribute name="options" type="List" access="PRIVATE"/>
-    <aura:attribute name="language" type="String" access="public"/>
+    <aura:attribute name="listviewfilter" type="String" access="public"/>
     <aura:attribute name="selectedValue" type="String"/>
     <aura:attribute name="sObjectType" type="String"/>
     <aura:attribute name="error" type="String"/>

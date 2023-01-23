@@ -1,4 +1,5 @@
-<design:component label="List Views Filtered by Language">
+<design:component label="List Views Filtered by Naming Convention">
 	<design:attribute name="sObjectType" label="sObject API Name" description="The object that this component will display list view options for" datasource="Case" />
-    <design:attribute name="language" label="language" description="The language of the listviews that will be available for selection" datasource="English, French, German" />    
+    <design:attribute name="listviewfilter" label="List View Filter" description="Filter that displays list views by naming convention" datasource="English, French, German" />    
+    
 </design:component>

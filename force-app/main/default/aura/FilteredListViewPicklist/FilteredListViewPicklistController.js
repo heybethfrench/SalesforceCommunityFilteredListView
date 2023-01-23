@@ -1,13 +1,4 @@
-/**
- * @description       : Picklist component for the filtered language list views for the community ADO Item 11428
- * @author            : beth.french@mii.com
- * @group             :
- * @last modified on  : 01-19-23
- * @last modified by  :	beth.french@mii.com
- * Modifications Log
- * Ver   Date         Author                Modification
- * 1.0   01-19-23   beth.french@mii.com   Initial Version
- **/
+
 
 ({
     init: function (cmp, event, helper) {
@@ -16,7 +7,7 @@
         var action = cmp.get("c.getObjectListViews");
         
         //setting the parameters that are passed into the apex method
-        action.setParams({searchKey: cmp.get('v.language'), sObjectType: cmp.get('v.sObjectType')});
+        action.setParams({searchKey: cmp.get('v.listviewfilter'), sObjectType: cmp.get('v.sObjectType')});
         
         //calling the server side apex
         action.setCallback(this, function(response){

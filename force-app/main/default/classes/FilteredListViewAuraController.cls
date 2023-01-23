@@ -1,13 +1,4 @@
-/**
- * @description       : Takes in a language and an sObject and returns list views based on the language filter ADO Item 11428
- * @author            : beth.french@mii.com
- * @group             :
- * @last modified on  : 01-19-23
- * @last modified by  :	beth.french@mii.com
- * Modifications Log
- * Ver   Date         Author                Modification
- * 1.0   01-19-23   beth.french@mii.com   Initial Version
- **/
+
 
 public with sharing class FilteredListViewAuraController {
 

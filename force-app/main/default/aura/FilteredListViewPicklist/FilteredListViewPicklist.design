@@ -1,0 +1,4 @@
+<design:component label="Filtered List View Picklist">
+	<design:attribute name="sObjectType" label="sObject API Name" description="The object that this component will display list view options for" datasource="Case, Account, Opportunity" default="Case" />
+    <design:attribute name="language" label="language" description="The language of the listviews that will be available for selection" datasource="English, French, German" default="German" />
+</design:component>

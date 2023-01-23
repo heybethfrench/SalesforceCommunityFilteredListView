@@ -1,0 +1,18 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <aura:attribute name="sObjectType" type="String" access="global"/>
+    <aura:attribute name="language" type="String" access="global"/>
+    <aura:attribute name="selectedValue" type="String" access="global"/>
+    <aura:attribute name="render" type="Boolean"/>
+    
+    <aura:handler name="componentEvent" event="c:selectedListViewEvent" action="{!c.handleComponentEvent}"/>
+    
+    <div class="slds-p-bottom_xx-small">
+        <c:FilteredListViewPicklist sObjectType="{!v.sObjectType}" language="{!v.language}"/>
+    </div>
+                                
+    <aura:if isTrue="{!v.render}">
+   		<c:FilteredListViewList selectedListView="{!v.selectedValue}"/>
+    </aura:if>
+</aura:component>

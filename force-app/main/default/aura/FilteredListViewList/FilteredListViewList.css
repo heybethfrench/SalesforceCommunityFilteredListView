@@ -1,0 +1,22 @@
+/*.THIS div.slds-page-header {
+    height: 50px;
+}*/
+
+.THIS div.slds-media {
+    display: none;
+    height: 0px;
+}
+
+.THIS div.firstHeaderRow {
+    display:none;
+    height: 0px;
+}
+
+.THIS div.test-lvmForceActionsContainer {
+    display:none;
+    height: 0px;
+}
+
+.THIS.test-listViewManager {
+    height: 700px;
+}

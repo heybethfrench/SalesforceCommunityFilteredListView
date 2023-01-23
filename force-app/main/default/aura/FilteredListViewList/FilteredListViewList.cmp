@@ -1,0 +1,15 @@
+<aura:component>
+    
+    <aura:attribute name="selectedListView" type="String" access="global"/>
+	<aura:if isTrue="{!AND(v.selectedListView != null, v.selectedListView != undefined)}">
+        <lightning:listView aura:id="listView"
+                            objectApiName="Case"
+                            listName="{!v.selectedListView}"
+                            rows="5"
+                            showSearchBar="true"
+                            showActionBar="false"
+                            enableInlineEdit="false"
+                            showRowLevelActions="false"/>
+    </aura:if>
+
+</aura:component>
